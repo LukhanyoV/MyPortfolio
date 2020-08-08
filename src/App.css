@@ -1,0 +1,236 @@
+body {
+  background-color: #374859;
+}
+
+
+/* hero start */
+
+.scroll .hero {
+  transform: scale(0.98);
+}
+
+.hero {
+  background-attachment: fixed;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5) 0,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+.hero .container-fluid {
+  z-index: 10;
+}
+
+/* hero end */
+
+/* my hero */
+
+.hero-image {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)),
+    url("./components/layout/avatars.svg");
+
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* end my hero */
+
+#about {
+  background-color: lightblue;
+  padding-bottom: 20px;
+}
+
+#profiles {
+  background-color: lightseagreen;
+  padding-bottom: 20px;
+}
+
+#skills {
+  background-color: lightsalmon;
+  padding-bottom: 20px;
+}
+
+#skills ul {
+  list-style: none;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+#projects {
+  background-color: lightslategray;
+  padding-bottom: 20px;
+}
+
+#contact {
+  background-color: lightseagreen;
+  padding-bottom: 20px;
+}
+
+#testimonial {
+  background-color: lightsteelblue;
+  padding-bottom: 20px;
+}
+
+
+/* my social icons */
+
+.roundz {
+  margin: 10px;
+}
+
+.fa-facebook, .fa-linkedin {
+  color: blue;
+}
+
+a, a:hover {
+  color: black;
+}
+
+/* Hover Blur Effect */
+.containerz {
+  position: relative;
+  width: 100%;
+}
+
+.imagez {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlayz {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.containerz:hover .overlayz {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.textz {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  /* position: fixed;
+  bottom: 0; */
+  display: block;
+  text-align: center;
+  background-color: black;
+  height: 50px;
+  color: white;
+  width: 100%;
+}
+
+footer span {
+  color: red;
+}
+
+
+/* the divider
+
+.fisrtDiv {
+  height: 20px;
+  background-color: green;
+}
+.secondDiv {
+  height: 20px;
+  background-color: black;
+}
+.thirdDiv {
+  height: 20px;
+  background-color: green;
+} */
+
+/* .container {
+  padding-top: 80px;
+} */
+
+.container h2 {
+  text-align: center;
+}
+
+
+/* the new pop divider */
+
+.divider {								/* minor cosmetics */
+  display: table; 
+  font-size: 24px; 
+  text-align: center; 
+  width: 75%; 						/* divider width */
+  margin: 40px auto;					/* spacing above/below */
+}
+.divider span { display: table-cell; position: relative; }
+.divider span:first-child, .divider span:last-child {
+  width: 50%;
+  top: 13px;							/* adjust vertical align */
+  -moz-background-size: 100% 2px; 	/* line width */
+  background-size: 100% 2px; 			/* line width */
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.divider span:first-child {				/* color changes in here */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
+  background-image: -webkit-linear-gradient(180deg, transparent, #000);
+  background-image: -moz-linear-gradient(180deg, transparent, #000);
+  background-image: -o-linear-gradient(180deg, transparent, #000);
+  background-image: linear-gradient(90deg, transparent, #000);
+}
+.divider span:nth-child(2) {
+  color: #000; padding: 0px 5px; width: auto; white-space: nowrap;
+}
+.divider span:last-child {				/* color changes in here */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
+  background-image: -webkit-linear-gradient(180deg, #000, transparent);
+  background-image: -moz-linear-gradient(180deg, #000, transparent);
+  background-image: -o-linear-gradient(180deg, #000, transparent);
+  background-image: linear-gradient(90deg, #000, transparent);
+}
